@@ -1,0 +1,27 @@
+:root{
+  --green-1:#1f8a4a;
+  --green-2:#66b27a;
+  --muted:#6c757d;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;line-height:1.6;color:#222;background:#fff}
+.hero{background:linear-gradient(90deg, rgba(31,138,74,0.06), rgba(102,178,122,0.04));min-height:40vh}
+.avatar{width:140px;height:140px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--green-1);color:#fff;font-weight:700;font-size:40px}
+.avatar-img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
+.fw-semibold{font-weight:600}
+section{padding-top:2rem;padding-bottom:2rem}
+.navbar-brand{color:var(--green-1)!important}
+.text-success{color:var(--green-1)!important}
+.bg-light{background:#fbfdfb!important}
+footer{background:transparent}
+
+/* Mobile-first tweaks */
+@media(min-width:768px){
+  .hero{min-height:48vh}
+  .avatar{width:160px;height:160px;font-size:48px}
+}
+
+/* Small utilities */
+.lead{font-size:1rem}
+.card{border:0}
+.progress{background:rgba(0,0,0,0.05)}
